@@ -78,6 +78,26 @@ const Projects = () => {
             featured: true,
         }
         ,
+        {
+    id: 3,
+    name: 'Skill Bazaar',
+    description: 'A local skill exchange SPA where users can browse skills, view details, and book learning sessions. Built with React and Firebase featuring authentication, protected routes, and a modern responsive UI.',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80',
+    technologies: [
+        'React',
+        'Firebase',
+        'React Router',
+        'TailwindCSS',
+        'DaisyUI',
+        'Swiper'
+    ],
+    category: 'react',
+    liveLink: 'https://skill-bazaar-f180d.web.app/',
+    githubLink: 'https://github.com/programming-hero-web-course2/b12-a9-firesheild-Foyzullah9988',
+    status: 'Live',
+    featured: true,
+}
+
 
     ];
 

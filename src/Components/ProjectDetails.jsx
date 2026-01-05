@@ -15,50 +15,50 @@ const ProjectDetails = () => {
     // Sample project data - in real app, this would come from API
     const project = {
         id: parseInt(id),
-        name: 'E-Commerce Platform',
-        description: 'A full-featured e-commerce platform built with MERN stack, featuring user authentication, product management, shopping cart, payment integration, and admin dashboard.',
-        longDescription: 'This project is a complete e-commerce solution that handles everything from user registration to order fulfillment. It includes advanced features like real-time inventory management, customer reviews and a comprehensive admin panel for store management.',
-        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+        name: 'TicketBari – Online Ticket Booking Platform',
+        description: 'A full-featured online ticket booking client-side application for booking Bus, Train, Launch, Plane, and Car tickets.',
+        longDescription: 'TicketBari is a large-scale React-based platform featuring role-based dashboards for Users, Vendors, and Admins. Users can search, filter, book tickets, and make payments via Stripe, while vendors and admins manage tickets, users, and advertisements.',
+        image: 'https://images.unsplash.com/photo-1549921296-3f4c36e3b6b7?auto=format&fit=crop&w=1200&q=80',
         technologies: [
             { name: 'React', category: 'Frontend' },
-            { name: 'Node.js', category: 'Backend' },
-            { name: 'Express.js', category: 'Backend' },
-            { name: 'MongoDB', category: 'Database' },
-            // { name: 'Redux', category: 'State Management' },
-            { name: 'JWT', category: 'Authentication' },
+            { name: 'React Router', category: 'Routing' },
+            { name: 'Tailwind CSS', category: 'UI' },
+            { name: 'Firebase Authentication', category: 'Authentication' },
+            { name: 'Axios', category: 'Data Fetching' },
+            { name: 'TanStack React Query', category: 'State Management' },
             { name: 'Stripe', category: 'Payment' },
-            { name: 'Socket.io', category: 'Real-time' },
+            { name: 'Swiper.js', category: 'UI' },
+            { name: 'Recharts', category: 'Charts' },
+            { name: 'Framer Motion', category: 'Animation' },
         ],
         features: [
-            'User authentication & authorization',
-            'Product catalog with search & filters',
-            'Shopping cart functionality',
-            'Payment gateway integration',
-            'Order tracking system',
-            'Admin dashboard',
-            'Customer reviews & ratings',
-            'Inventory management',
+            'Fully responsive design with dark/light mode',
+            'Role-based dashboards (User, Vendor, Admin)',
+            'Search, filter, sort, and paginate tickets',
+            'Private ticket details page with countdown timer',
+            'Stripe payment integration and transaction history',
+            'Vendor ticket management and revenue overview',
+            'Admin user and ticket management',
+            'Protected routes with Firebase Authentication',
         ],
         challenges: [
-            'Implementing real-time inventory updates across multiple users',
-            'Optimizing database queries for large product catalogs',
-            'Securing payment transactions and user data',
-            'Handling concurrent user sessions and cart management',
-            'Implementing responsive design across all devices',
+            'Managing role-based access control',
+            'Implementing secure Stripe payment flow',
+            'Handling ticket expiration and quantity validation',
+            'Optimizing performance with pagination',
         ],
         improvements: [
-            'Add AI-powered product recommendations',
-            'Implement multi-vendor support',
-            'Add video product reviews',
-            'Integrate with multiple shipping providers',
-            'Implement push notifications for order updates',
+            'Seat selection system',
+            'Refund and cancellation feature',
+            'Real-time notifications',
+            'Mobile app version',
         ],
-        liveLink: 'https://ecommerce-demo.com',
-        githubLink: 'https://github.com/foyzullah/ecommerce',
-        startDate: 'Jan 2023',
-        endDate: 'Apr 2023',
+        liveLink: 'https://ticket-bari-15f05.web.app/',
+        githubLink: 'https://github.com/Foyzullah9988/ticketbari-client',
+        startDate: 'Nov 2024',
+        endDate: 'Dec 2024',
         status: 'Completed',
-        role: 'Full Stack Developer',
+        role: 'Frontend Developer',
     };
 
     // Group technologies by category
@@ -138,8 +138,8 @@ const ProjectDetails = () => {
                             <span>{project.role}</span>
                         </div>
                         <div className={`px-3 py-1 rounded-full text-sm font-medium ${project.status === 'Completed'
-                                ? 'bg-green-500/20 text-green-400'
-                                : 'bg-blue-500/20 text-blue-400'
+                            ? 'bg-green-500/20 text-green-400'
+                            : 'bg-blue-500/20 text-blue-400'
                             }`}>
                             {project.status}
                         </div>
